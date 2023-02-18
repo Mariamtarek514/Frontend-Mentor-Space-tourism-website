@@ -363,6 +363,9 @@ header{
 .technology .header-row h2{
     text-align: left;
 }
+.technology .crew-content .text h2{
+    letter-spacing:3px;
+}
 .technology .crew-container .text h3{
     font-size: 16px;
     color: var(--secondery-color);
