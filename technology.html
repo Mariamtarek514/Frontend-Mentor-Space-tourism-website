@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Technology</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- styles links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/utilize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!-- start nav section -->
+    <header>
+        <nav class="navbar">
+
+            <figure class="logo">
+                <img src="images/shared/logo.svg" alt="logo">
+            </figure>
+            <ul class="navbar-container">
+                <li id="closeNav" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html">00 Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="destination.html">01 Destination</a>
+                </li>
+                <li class="nav-item">
+                    <a href="crew.html">02 Crew</a>
+                </li>
+                <li class="nav-item active"><a href="technology.html">03 Technology</a></li>
+            </ul>
+            <div class="mobile" id="openNav" onclick="openNav()">
+                <i class="fa-solid fa-bars open"></i>
+            </div>
+
+        </nav>
+    </header>
+    <!-- end nav section -->
+    <!--start landing  -->
+    <main class="technology">
+            <div class="main-content">
+                <div class="crew-container">
+                        <div class="header-row">
+                            <h2> <span>03</span> Space launch 101</h2>
+                        </div>
+                    <div class="crew-content">
+                        <ul class="technology-filter">
+                            <li class="active" data-id="1">1</li>
+                            <li data-id="2" >2</li>
+                            <li data-id="3" >3</li>
+                        </ul>
+                        <div class="text active" id="1">
+                            <h3>The terminology...</h3>
+                            <h2>Launch vehicle</h2>
+                            <p>
+                                A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                                payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                                it's quite an awe-inspiring sight on the launch pad!
+                            </p>
+                        </div>
+                        <div class="text" id="2">
+                            <h3>The terminology...</h3>
+                            <h2>Spaceport</h2>
+                            <p>
+                                A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                                by analogy to the seaport for ships or airport for aircraft. Based in the 
+                                famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+                                of the Earth’s rotation for launch.
+                            </p>
+                        </div>
+                        <div class="text" id="3">
+                            <h3>The terminology...</h3>
+                            <h2>Space capsule</h2>
+                            <p>
+                                A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+                                capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+                                you'll spend your time during the flight. It includes a space gym, cinema, 
+                                and plenty of other activities to keep you entertained.
+                            </p>
+                        </div>
+                   
+                    </div>
+                </div>
+                <div class="image-container">
+                    <figure data-image="1" class="image active">
+                        <img src="images/technology/image-launch-vehicle-portrait.jpg" class="desketop" alt="person">
+                        <img src="images/technology/image-launch-vehicle-landscape.jpg" class="tablet">
+                    </figure>
+                    <figure data-image="2" class="image">
+                        <img src="images/technology/image-spaceport-portrait.jpg" class="desketop" alt="person">
+                        <img src="images/technology/image-spaceport-landscape.jpg" class="tablet">
+                    </figure>
+                    <figure data-image="3" class="image">
+                        <img src="images/technology/image-space-capsule-portrait.jpg" class="desketop" alt="person">
+                        <img src="images/technology/image-space-capsule-landscape.jpg" class="tablet">
+
+                    </figure>
+                </div>
+
+            </div>
+        
+
+        </section>
+    </main>
+    <!--end landing  -->
+
+    <!-- script -->
+    <script src="js/technology.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

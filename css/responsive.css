@@ -1,0 +1,405 @@
+/* container */
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*med screen*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/*large screen*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media  screen and (max-width:1200px) {
+    .technology .crew-content{
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+    .technology .crew-content .technology-filter{
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        margin-top: 46px;
+        column-gap: 30px;
+    }
+    .technology .crew-container{
+        row-gap: 90px;
+    }
+    .technology .crew-container .header-row{
+        text-align: center;
+    }
+   
+
+}
+@media screen and (max-width:1400px) {
+    
+    .navbar .navbar-container::after{
+        display: none;
+    }
+}
+@media  screen and (max-width:991px) {
+    .navbar .navbar-container{
+        width: 510px;
+    }
+    .landing,.destination{
+        background: url(../images/home/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 50px;
+    
+    }
+  .destination{
+      background: url("../images/destination/background-destination-tablet.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+   .crew{
+        background: url("../images/crew/background-crew-tablet.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    .landing  .container{
+        flex-direction: column;
+        bottom: unset;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        row-gap: 6rem;
+        text-align: center;
+        margin-top: 20px;
+    
+    }
+     .right_landing p{
+        width: 465px;
+        font-size: 16px;
+      
+    }
+    /* =============================== */
+    /* destination page */
+    .destination .container .main-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .destination .content .filter{
+        justify-content: center;
+        margin-top: 4em;
+    
+    }
+    .destination .moon .moon-numbers
+    {
+        justify-content: center;
+        padding-top: 40px;
+    }
+    .destination .content .moon-details p{
+        width: 617px;
+         max-width: 100%;
+    }
+    /* crew page */
+    .crew .header-row h2{
+        text-align: left;
+    }
+    .crew .crew-container{
+        width: 100%;
+        row-gap: 60px;
+        margin-top: 40px;
+    }
+    .crew .main-content p{
+        margin: auto;
+        width: 500px;
+        max-width: 100%;
+    }
+    .crew .container .main-content{
+        flex-direction: column;
+        row-gap: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .crew .crew-filter{
+        justify-content: center;
+        align-items: center;
+    
+    }
+    /* technology */
+    .technology .main-content{
+        flex-direction: column;
+    }
+    .technology .image-container{
+        order: -1;
+        width: 100%; 
+        margin-bottom: 3rem;   
+    }
+ 
+    .technology .image .desketop{
+        display: none;
+    }
+    .technology .image .tablet{
+        width: 100%; 
+        display: block;
+    }
+    .technology .header-row h2{
+        text-align: center;
+    }
+    .technology .crew-content .technology-filter{
+        order: 0;
+        margin: 0 auto 47px;
+        column-gap: 40px;
+    }
+    .technology .crew-container{
+        width: 100%;
+        padding-left: unset;
+        margin-bottom: 50px;
+    }
+    .technology .crew-content .text p{
+        color: var(--secondery-color);
+        width: 458px;
+        margin: auto;
+        font-size: 15.8px;
+        max-width: 100%;
+    }
+    .technology .crew-content .technology-filter li{
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+    }
+    .technology .crew-content .text{
+        text-align: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:765px) {
+    /* start landing */
+    .landing,
+    .destination{
+        background: url(../images/home/background-home-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+    }
+    .destination{
+        background: url("../images/destination/background-destination-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .crew{
+        background: url("../images/crew/background-crew-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    .landing .right_landing span{
+        font-size: 25px;
+    }
+    .landing .right_landing h1{
+        font-size: 5rem;
+    }
+    .landing .right_landing p{
+        width: 100%;
+    }
+    .landing .left_landing a{
+        width: 200px;
+        height: 200px;
+        font-size: 25px;
+    }
+    /* end landing */
+    /* start navbar */
+    header{
+        height: 70px;
+    }
+    .navbar{
+        top: 20px;
+    }
+    .navbar .logo img{
+        width: 37px;
+    }
+    .navbar .navbar-container{
+        top: 0;
+        min-height: 100vh;
+        position: fixed;
+        right: 0;
+        width: 300px;
+        max-width: 100%;
+        z-index: 24;
+        display: flex;
+        justify-content: flex-start;
+        padding: 3rem 2rem;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: baseline;
+        transform:translateX(100%) ;
+        -webkit-transform:translateX(100%) ;
+        -moz-transform:translateX(100%) ;
+        -ms-transform:translateX(100%) ;
+        -o-transform:translateX(100%) ;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+}
+.navbar .navbar-container.active{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.navbar .navbar-container #closeNav{
+    display: block;
+    color: #FFF;
+    margin-left: auto;
+    font-size: 22px;
+    cursor: pointer;
+}
+    
+    .navbar .mobile{
+        
+    display: block;
+    margin-right: 32px;
+
+    }
+    .mobile svg{
+        color: #FFF;
+        font-size: 29px;
+        cursor: pointer;
+    }
+    .navbar .navbar-container li a{
+        color: #ffffff6e;
+    }
+    .navbar .navbar-container li.active a,
+    .navbar .navbar-container li:hover a{
+        color: #FFF;
+    }
+    .navbar .navbar-container li a::after{
+        display: none;
+    }
+    /* ====================================== */
+    /* start destination page */
+    .destination .header-row h2{
+        font-size: 18px;
+    }
+    .destination .main-content figure{
+        align-items: center;
+    }
+    .destination img{
+        width: 300px;
+        max-width: 100%;
+    }
+    .destination .content{
+        row-gap: 44px;
+    }
+    .destination .content .moon h2 {
+        font-size: 56px;
+    }
+    .destination .content .moon-details p{
+        font-size: 15px;
+        width:100% ;
+    }
+    .destination .moon .moon-numbers
+    {
+        justify-content: center;
+        flex-direction: column;
+        gap: 41px;
+        width: 100%;
+    }
+    .destination .content .moon-numbers .moon_1 span{
+        font-size: 18px;
+    }
+    .destination .content .moon-numbers .moon_1 h3 {
+        font-size: 23px;
+    }
+    /* start crew page */
+    .crew .header-row h2{
+        text-align: center;
+        font-size: 22px;
+    }
+    .crew .crew-container h3{
+        font-size: 25px;
+    }
+    .crew .crew-container .crew-content h2{
+        font-size: 29px;
+    }
+    .crew .main-content p{
+        font-size: 13px;
+    }
+   
+    .crew figure img{
+        width: 400px;
+        max-width: 100%;
+        min-width: unset;
+    }
+    /* ======================================== */
+    /* technology page */
+    .technology .crew-container .header-row{
+        text-align: center;
+    } 
+}
+@media screen and (max-width:525px) {
+    .crew .main-content p{
+        width: 95%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:461px) {
+    .crew .crew-container h3{
+        font-size: 19px;
+    }
+    .crew .crew-container .crew-content h2{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:357px) {
+    .crew .header-row h2{
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    .crew .crew-container h3{
+        font-size: 17px;
+    }
+    .crew .crew-container .crew-content h2{
+        line-height: 1.6;
+        font-size: 17px;
+    }
+ 
+}
+@media screen and (max-width:500px) {
+    .technology .crew-container{
+        row-gap: 55px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .technology .crew-content .technology-filter li{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 19px;
+    }
+    .technology .header-row h2{
+        font-size: 22px;
+    }
+    .technology .crew-content .text h2{
+        font-size: 2.5rem;
+    }
+    .technology .crew-content .text p{
+        font-size: 14px;
+        margin-top: 26px;
+    }
+}
+@media screen and (max-width:400px) {
+    .technology .header-row h2{
+        font-size: 19px;
+    }
+    .technology .crew-content .text h2{
+        font-size: 2rem;
+    }
+}
